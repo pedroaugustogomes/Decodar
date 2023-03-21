@@ -5,6 +5,7 @@ body{
     background-image: linear-gradient(to bottom, #BAC7ED, #FFF6C5, #DAC5C5);
     min-height: 400dvh;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
 }
 
 body::-webkit-scrollbar {
@@ -23,10 +24,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
     height: 85px;
     background-color: #4CAF50;
     margin: 0px;
-    position: relative;
 }
 
 header img{
@@ -38,17 +43,14 @@ header img{
 }
 
 nav{
-    display: inline-block;
 
-    position: absolute;
-    top: 35%;
-    left: 57dvw;
+
 }
 
 nav a{
     text-decoration: none;
-    font-size: 1.4em;
     color: #55009b;
+    font-size: 100%;
     padding: 10px 15px;
     border-radius: 5px;
 }
@@ -71,30 +73,46 @@ main a{
 main p{
     display: block;
     max-width: 600px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: justify;
 }
 
-main a > div#contato{
+main h1{
+    padding-bottom: 50px;
+}
+
+a#acontato{
+    display: block;
+    max-width: 300px;
+}
+
+div#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-decoration: none;
-    color: black;
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
+    color: rgb(63, 63, 63);
+    width: 300px;
+    height: 60px;
+    border-radius: 15px;
     
     background-color: gray;
     text-align: center;
     font-weight: 600;
 }
 
-main a > div#contato:hover{
+div#contato:hover{
     background-color: rgb(85, 85, 85);
     color: rgb(184, 184, 184);
     transition-duration: 0.5s;
 }
 
-#contato p{
-    padding: 6px 0px;
+div#contato p{
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
 }
 
 h1#centralizado{
@@ -103,12 +121,17 @@ h1#centralizado{
     padding-top: 100px;
 }
 
+div#SERVIÇOS{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 div.serviços{
     display: inline-block;
     width: 200px;
     height: 200px;
     background-color: white;
-    margin: 50px;
     border: 3px solid black;
     border-radius: 10px;
 
@@ -133,6 +156,7 @@ div.serviços:hover{
 #pilares{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 
     width: 90dvw;
